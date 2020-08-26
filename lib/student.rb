@@ -7,7 +7,8 @@ attr_reader :id
 @@all = []
 
 def initialize(name, grade)
-
+@name = name
+@grade = grade
 end
 
 def self.all
