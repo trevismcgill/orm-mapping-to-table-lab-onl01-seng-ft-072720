@@ -27,7 +27,9 @@ def self.create_table
 end
 
 def self.drop_table
-
+  sql = <<-SQL
+    DROP TABLE IF EXISTS students;
+    SQL
 end
 
 def save
