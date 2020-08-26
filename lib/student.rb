@@ -9,6 +9,7 @@ attr_reader :id
 def initialize(name, grade, id=nil )
 @name = name
 @grade = grade
+@id = id
 end
 
 def self.all
@@ -45,7 +46,7 @@ def save
 end
 
 def self.create(hash)
-  student = Student.new(name, grade)
+  student = Student.new(hash)
   student.save
   student
 end
