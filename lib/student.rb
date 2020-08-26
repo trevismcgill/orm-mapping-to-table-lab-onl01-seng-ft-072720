@@ -46,7 +46,7 @@ def save
 end
 
 def self.create(hash)
-  student = Student.new({hash})
+  student = Student.new(hash)
   student.save
   student
 end
