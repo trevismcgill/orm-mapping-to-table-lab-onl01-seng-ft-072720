@@ -6,7 +6,7 @@ attr_reader :id
 
 @@all = []
 
-def initialize
+def initialize(name, grade)
 
 end
 
